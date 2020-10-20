@@ -1,0 +1,74 @@
+@import "abstracts/colors";
+
+.wrapper {
+  margin: 24px 16px;
+  padding: 24px;
+  min-height: 280px;
+}
+
+.header-dashboard {
+  background-color: #fff !important;
+  border-bottom: 1px solid #c8ced3;
+  z-index: 999;
+  margin: 0;
+  padding: 0 !important;
+  height: 6% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between;
+}
+
+.menu-layout{
+  height: 100%;
+}
+
+.menu-mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+//Cor do sidebar menu
+#sidemenu {
+  background-color: $sidebar-color !important;
+}
+
+//Cor do hover do menu
+#sidemenu > .ant-menu-item {
+  color: $sidebar-text-color;
+  &:hover {
+    background-color: $sidebar-color-active !important;
+  }
+}
+
+//Cor do menu selecionado
+#sidemenu > .ant-menu-item-selected {
+  color: $sidebar-text-color-active;
+  background-color: $primary-color !important;
+}
+
+#sidemenu ul .ant-menu-item-selected .anticon {
+  color: $sidebar-text-color-active !important;
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: $primary-color ;
+}
+
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}

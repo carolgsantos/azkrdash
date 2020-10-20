@@ -1,0 +1,7 @@
+export { default as Auth } from './Auth/Auth'
+export { default as Dashboard } from './Dashboard/Dashboard'
+export { default as Partners } from './Partners/Partners'
+export { default as PartnershipRequest } from './PartnershipRequest/PartnershipRequest'
+export { default as PartnerCoupons } from './Coupons/PartnerCoupons'
+export { default as CreateCoupon } from './Coupons/CreateCoupon'
+export { default as MembersList } from './MembersList/MembersList'
